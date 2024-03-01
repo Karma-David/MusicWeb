@@ -9,5 +9,36 @@ package Model;
  * @author Hi
  */
 public class CartItems {
+    private int CartItemsID, MusicID;
+
+    public CartItems() {
+    }
+
+    public CartItems(int CartItemsID, int MusicID) {
+        this.CartItemsID = CartItemsID;
+        this.MusicID = MusicID;
+    }
+
+    public int getCartItemsID() {
+        return CartItemsID;
+    }
+
+    public void setCartItemsID(int CartItemsID) {
+        this.CartItemsID = CartItemsID;
+    }
+
+    public int getMusicID() {
+        return MusicID;
+    }
+
+    public void setMusicID(int MusicID) {
+        this.MusicID = MusicID;
+    }
+
+    @Override
+    public String toString() {
+        return "CartItems({" + "CartItemsID=" + CartItemsID + ", MusicID=" + MusicID + '}';
+    }
+    
     
 }
